@@ -45,7 +45,7 @@ const ProductCard = ({
 
   return (
     <div 
-      className="bg-white rounded-md border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group relative"
+      className="bg-white rounded-md border border-gray-200  hover:shadow-md transition-all duration-300 overflow-hidden group relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

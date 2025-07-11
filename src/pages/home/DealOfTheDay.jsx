@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProductCard from '../../components/ProductCard/ProductCard';
+import ProductCard from '../../components/Cards/ProductCard';
 
 const DealOfTheDay = () => {
   const [timeLeft, setTimeLeft] = useState({
