@@ -1,6 +1,7 @@
 import React from 'react'
 import { Apple, Croissant, Carrot, Milk, Cookie, Coffee, Pizza, Fish, Beef, Candy } from 'lucide-react'
-import CategoryCard from '../../components/CategoryCard/CategoryCard';
+import CategoryCard from '../../components/Cards/CategoryCard';
+
 
 const Categories = () => {
   const categoriesData = [

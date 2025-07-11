@@ -65,10 +65,10 @@ const Navbar = () => {
          
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <div className="bg-green-500 w-8 h-8 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-white font-bold text-sm">G</span>
+                <div className="bg-blue-500 w-8 h-8 rounded-full flex items-center justify-center mr-2">
+                  <span className="text-white font-bold text-sm">L</span>
                 </div>
-                <span className="text-xl sm:text-2xl font-bold text-gray-900">Grabit</span>
+                <span className="text-xl sm:text-2xl font-bold text-gray-900">Lohiya's</span>
               </div>
             </div>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
                 <input
                   type="text"
                   placeholder="category"
-                  className="w-full px-4 py-3.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-3.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
                 <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600">
                   <Search size={20} />
@@ -143,36 +143,36 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-12">
          
             <div className="flex items-center">
-              <button className="flex items-center space-x-2 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
+              <button className="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
                 <Grid3X3 size={16} />
-                <span className="font-medium">All Categories</span>
+                <span className="">All Categories</span>
                 <ChevronDown size={16} />
               </button>
             </div>
 
  
             <div className="flex items-center space-x-8">
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-green-600 cursor-pointer">
+              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Home</span>
                 <ChevronDown size={16} />
               </div>
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-green-600 cursor-pointer">
+              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Categories</span>
                 <ChevronDown size={16} />
               </div>
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-green-600 cursor-pointer">
+              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Products</span>
                 <ChevronDown size={16} />
               </div>
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-green-600 cursor-pointer">
+              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Blog</span>
                 <ChevronDown size={16} />
               </div>
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-green-600 cursor-pointer">
+              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Pages</span>
                 <ChevronDown size={16} />
               </div>
-              <div className="flex items-center space-x-2 text-gray-700 hover:text-green-600 cursor-pointer">
+              <div className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <Gift size={16} />
                 <span>Offers</span>
               </div>
@@ -180,7 +180,7 @@ const Navbar = () => {
 
        
             <div className="flex items-center">
-              <button className="flex items-center space-x-2 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
+              <button className="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
                 <MapPin size={16} />
                 <span>New York</span>
                 <ChevronDown size={16} />

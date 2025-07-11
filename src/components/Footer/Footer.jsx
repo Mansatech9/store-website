@@ -36,10 +36,10 @@ const Footer = () => {
           <div className="w-full lg:w-[25%] ">
           
             <div className="flex items-center mb-4">
-              <div className="bg-green-500 w-8 h-8 rounded-full flex items-center justify-center mr-2">
+              <div className="bg-blue-500 w-8 h-8 rounded-full flex items-center justify-center mr-2">
                 <span className="text-white font-bold text-sm">G</span>
               </div>
-              <span className="text-2xl font-bold text-gray-900">Grabit</span>
+              <span className="text-2xl font-bold text-gray-900">Lohiya's</span>
             </div>
 
            
@@ -56,7 +56,7 @@ const Footer = () => {
                 <div className="flex flex-col leading-tight">
                   <div className="text-[10px] uppercase">GET IT ON</div>
                   <div className="text-xs font-medium truncate">
-                    Google Playg
+                    Google Play
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Dried Fruit
                     </a>
@@ -101,7 +101,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Cookies
                     </a>
@@ -109,7 +109,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Foods
                     </a>
@@ -117,7 +117,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Fresh Fruit
                     </a>
@@ -125,7 +125,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Tuber Root
                     </a>
@@ -133,7 +133,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Vegetables
                     </a>
@@ -162,7 +162,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       About us
                     </a>
@@ -170,7 +170,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Delivery
                     </a>
@@ -178,7 +178,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Legal Notice
                     </a>
@@ -186,7 +186,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Terms & conditions
                     </a>
@@ -194,7 +194,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Secure payment
                     </a>
@@ -202,7 +202,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Contact us
                     </a>
@@ -231,7 +231,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Sign In
                     </a>
@@ -239,7 +239,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       View Cart
                     </a>
@@ -247,7 +247,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Return Policy
                     </a>
@@ -255,7 +255,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Become a Vendor
                     </a>
@@ -263,7 +263,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Affiliate Program
                     </a>
@@ -271,7 +271,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="text-gray-600 hover:text-green-600 transition-colors"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Payments
                     </a>
@@ -298,7 +298,7 @@ const Footer = () => {
               >
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <MapPin className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                     <div className="text-gray-600 text-sm">
                       <div>2548 Broaddus Maple Court,</div>
                       <div>Madisonville KY 4783, USA.</div>
@@ -306,20 +306,20 @@ const Footer = () => {
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-green-600 flex-shrink-0" />
+                    <Phone className="w-5 h-5 text-blue-600 flex-shrink-0" />
                     <a
                       href="tel:+009876543210"
-                      className="text-gray-600 hover:text-green-600 transition-colors text-sm"
+                      className="text-gray-600 hover:text-blue-600 transition-colors text-sm"
                     >
                       +00 987654320
                     </a>
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <Mail className="w-5 h-5 text-green-600 flex-shrink-0" />
+                    <Mail className="w-5 h-5 text-blue-600 flex-shrink-0" />
                     <a
                       href="mailto:example@email.com"
-                      className="text-gray-600 hover:text-green-600 transition-colors text-sm"
+                      className="text-gray-600 hover:text-blue-600 transition-colors text-sm"
                     >
                       example@email.com
                     </a>
@@ -328,25 +328,25 @@ const Footer = () => {
                   <div className="flex space-x-3 pt-2">
                     <a
                       href="#"
-                      className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-green-600 transition-colors"
+                      className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
                     >
                       <Facebook size={16} />
                     </a>
                     <a
                       href="#"
-                      className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-green-600 transition-colors"
+                      className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
                     >
                       <Twitter size={16} />
                     </a>
                     <a
                       href="#"
-                      className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-green-600 transition-colors"
+                      className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
                     >
                       <Linkedin size={16} />
                     </a>
                     <a
                       href="#"
-                      className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-green-600 transition-colors"
+                      className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
                     >
                       <Instagram size={16} />
                     </a>
@@ -356,16 +356,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="hidden w-full lg:grid lg:grid-cols-4 lg:w-[75%] ">
+          <div className="hidden w-full lg:grid lg:grid-cols-4 lg:w-[75%] gap-2">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              <h3 className="text-xl    text-gray-900 mb-4">
                 Category
               </h3>
+              <hr className="mb-4 text-gray-200"/>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Dried Fruit
                   </a>
@@ -373,7 +374,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Cookies
                   </a>
@@ -381,7 +382,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Foods
                   </a>
@@ -389,7 +390,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Fresh Fruit
                   </a>
@@ -397,7 +398,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Tuber Root
                   </a>
@@ -405,7 +406,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Vegetables
                   </a>
@@ -415,14 +416,15 @@ const Footer = () => {
 
             {/* Company */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              <h3 className="text-xl text-gray-900 mb-4">
                 Company
               </h3>
+              <hr className="mb-4 text-gray-200"/>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     About us
                   </a>
@@ -430,7 +432,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Delivery
                   </a>
@@ -438,7 +440,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Legal Notice
                   </a>
@@ -446,7 +448,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Terms & conditions
                   </a>
@@ -454,7 +456,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Secure payment
                   </a>
@@ -462,7 +464,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Contact us
                   </a>
@@ -472,14 +474,15 @@ const Footer = () => {
 
             {/* Account */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              <h3 className="text-xl  text-gray-900 mb-4">
                 Account
               </h3>
+              <hr className="mb-4 text-gray-200"/>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Sign In
                   </a>
@@ -487,7 +490,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     View Cart
                   </a>
@@ -495,7 +498,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Return Policy
                   </a>
@@ -503,7 +506,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Become a Vendor
                   </a>
@@ -511,7 +514,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Affiliate Program
                   </a>
@@ -519,7 +522,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
                   >
                     Payments
                   </a>
@@ -529,12 +532,13 @@ const Footer = () => {
 
             {/* Contact */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              <h3 className="text-xl  text-gray-900 mb-4">
                 Contact
               </h3>
+              <hr className="mb-4 text-gray-200"/>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                   <div className="text-gray-600 text-sm">
                     <div>2548 Broaddus Maple Court,</div>
                     <div>Madisonville KY 4783, USA.</div>
@@ -542,20 +546,20 @@ const Footer = () => {
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-blue-600 flex-shrink-0" />
                   <a
                     href="tel:+009876543210"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-sm"
+                    className="text-gray-600 hover:text-blue-600 transition-colors text-sm"
                   >
                     +00 987654320
                   </a>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-blue-600 flex-shrink-0" />
                   <a
                     href="mailto:example@email.com"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-sm"
+                    className="text-gray-600 hover:text-blue-600 transition-colors text-sm"
                   >
                     example@email.com
                   </a>
@@ -564,25 +568,25 @@ const Footer = () => {
                 <div className="flex space-x-3 pt-2">
                   <a
                     href="#"
-                    className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-green-600 transition-colors"
+                    className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
                   >
                     <Facebook size={16} />
                   </a>
                   <a
                     href="#"
-                    className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-green-600 transition-colors"
+                    className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
                   >
                     <Twitter size={16} />
                   </a>
                   <a
                     href="#"
-                    className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-green-600 transition-colors"
+                    className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
                   >
                     <Linkedin size={16} />
                   </a>
                   <a
                     href="#"
-                    className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-green-600 transition-colors"
+                    className="w-8 h-8 bg-gray-600 text-white rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
                   >
                     <Instagram size={16} />
                   </a>
@@ -603,9 +607,9 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
     
         <div className="text-gray-600 text-sm text-center lg:text-left">
-          Copyright © <span className="text-green-600">Grabit</span> all
+          Copyright © <span className="text-blue-600">Lohiya's</span> all
           rights reserved. Powered by{" "}
-          <span className="text-green-600">Grabit</span>.
+          <span className="text-blue-600">Ag-Solutions</span>.
         </div>
 
         
@@ -637,7 +641,7 @@ const Footer = () => {
             </div>
 
             {/* American Express */}
-            <div className="w-12 h-8 bg-green-600 rounded flex items-center justify-center">
+            <div className="w-12 h-8 bg-blue-600 rounded flex items-center justify-center">
               <span className="text-white font-bold text-xs">AE</span>
             </div>
           </div>

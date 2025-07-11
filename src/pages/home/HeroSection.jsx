@@ -48,13 +48,13 @@ const HeroSection = () => {
               />
               <div className={`absolute inset-0 flex items-center transition-opacity duration-1000 ${activeSlide === 0 ? 'opacity-100' : 'opacity-0'}`}>
                 <div className="max-w-2xl text-white pl-8 lg:pl-16 py-12">
-                  <p className="text-lg lg:text-xl text-green-400 font-medium mb-4 transform transition-all duration-700 delay-100 ${activeSlide === 0 ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}">
+                  <p className="text-lg lg:text-xl text-blue-400 font-medium mb-4 transform transition-all duration-700 delay-100 ${activeSlide === 0 ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}">
                     Starting at $ 29.99
                   </p>
-                  <h1 className="text-3xl lg:text-5xl font-bold text-gray-600 mb-8 leading-tight transform transition-all duration-700 delay-200 ${activeSlide === 0 ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}">
-                    Explore fresh & juicy fruits
+                  <h1 className="text-3xl lg:text-5xl font-medium text-gray-600 mb-8 leading-tight transform transition-all duration-700 delay-200 ${activeSlide === 0 ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}">
+                    Explore fresh &  <br/> juicy fruits
                   </h1>
-                  <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 flex items-center gap-2 transform ${activeSlide === 0 ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'} delay-300">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-lg font-medium transition-all duration-300 flex items-center gap-2 transform ${activeSlide === 0 ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'} delay-300">
                     Shop Now
                     <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">»</span>
                   </button>
@@ -73,14 +73,14 @@ const HeroSection = () => {
               />
               <div className={`absolute inset-0 flex items-center justify-end transition-opacity duration-1000 ${activeSlide === 1 ? 'opacity-100' : 'opacity-0'}`}>
                 <div className="max-w-2xl text-white pr-8 lg:pr-16 py-12 text-right">
-                  <p className="text-lg lg:text-xl text-green-400 font-medium mb-4 transform transition-all duration-700 delay-100 ${activeSlide === 1 ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}">
+                  <p className="text-lg lg:text-xl text-blue-400 font-medium mb-4 transform transition-all duration-700 delay-100 ${activeSlide === 1 ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}">
                     Premium Quality
                   </p>
-                  <h1 className="text-3xl lg:text-5xl font-bold text-gray-600 mb-8 leading-tight transform transition-all duration-700 delay-200 ${activeSlide === 1 ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}">
-                    Fresh organic produce
+                  <h1 className="text-3xl lg:text-5xl font-medium text-gray-600 mb-8 leading-tight transform transition-all duration-700 delay-200 ${activeSlide === 1 ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}">
+                  Oraganic & healthy <br/> vegetables
                   </h1>
                   <div className="flex justify-end">
-                    <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 flex items-center gap-2 transform ${activeSlide === 1 ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'} delay-300">
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-lg font-medium transition-all duration-300 flex items-center gap-2 transform ${activeSlide === 1 ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'} delay-300">
                       Shop Now
                       <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">»</span>
                     </button>
