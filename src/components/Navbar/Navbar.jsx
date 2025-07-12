@@ -12,10 +12,11 @@ import {
   Grid3X3,
   X
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const navigate = useNavigate()
   return (
     <div className="w-full">
       {/* Top Header */}
@@ -152,29 +153,33 @@ const Navbar = () => {
 
  
             <div className="flex items-center space-x-8">
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
+              <div 
+                   onClick={()=>navigate('/')}
+              className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Home</span>
-                <ChevronDown size={16} />
+               
               </div>
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
+              <div
+              onClick={()=>navigate('/categories')}
+              className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Categories</span>
-                <ChevronDown size={16} />
+               
               </div>
               <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Products</span>
-                <ChevronDown size={16} />
+              
               </div>
               <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Blog</span>
-                <ChevronDown size={16} />
+               
               </div>
               <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Pages</span>
-                <ChevronDown size={16} />
+               
               </div>
               <div className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <Gift size={16} />
-                <span>Offers</span>
+              
               </div>
             </div>
 

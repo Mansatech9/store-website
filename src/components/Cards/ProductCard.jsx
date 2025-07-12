@@ -11,7 +11,8 @@ const ProductCard = ({
   rating = 0, 
   weight,
   onSale = false,
-  isNew = false 
+  isNew = false ,
+  onViewProduct
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -42,7 +43,11 @@ const ProductCard = ({
     
     return stars;
   };
-
+  const handleViewProduct = () => {
+    if (onViewProduct) {
+      onViewProduct();
+    }
+  };
   return (
     <div 
       className="bg-white rounded-md border border-gray-200  hover:shadow-md transition-all duration-300 overflow-hidden group relative"
@@ -72,7 +77,9 @@ const ProductCard = ({
     <button className="p-2 rounded-lg bg-white border border-gray-200 cursor-pointer hover:bg-green-300 transition-colors duration-200">
       <ShoppingCart className="w-4 h-4 text-gray-900" />
     </button>
-    <button className="p-2 rounded-lg  bg-white border border-gray-200 cursor-pointer hover:bg-green-300 transition-colors duration-200">
+    <button 
+     onClick={handleViewProduct}
+    className="p-2 rounded-lg  bg-white border border-gray-200 cursor-pointer hover:bg-green-300 transition-colors duration-200">
       <Eye className="w-4 h-4 text-gray-900" />
     </button>
   </div>
