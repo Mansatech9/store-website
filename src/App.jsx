@@ -1,32 +1,20 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Footer from './components/Footer/Footer'
+
 import Home from './pages/home/Home'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import Categories from './pages/categories/Categories';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      
-     
-
-
-
-
-
-      <main className="flex-grow ">
-        <div className=" bg-[#FFFFFF]">
-        
-          <Home/>
-      
-        </div>
-      </main>
-      
-
-
-
-      <Footer />
-    </div>
+    <Router>
+    <MainLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </MainLayout>
+  </Router>
   )
 }
 

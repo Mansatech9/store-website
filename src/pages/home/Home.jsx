@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSection from './HeroSection'
-import Categories from './Categories'
+import Category from './Category'
 import DealOfTheDay from './DealOfTheDay'
 import NewArrival from './NewArrival'
 import Featured from './Featured'
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
     <HeroSection/>
-    <Categories/>
+    <Category/>
     <DealOfTheDay/>
     <NewArrival/>
     <Featured/>

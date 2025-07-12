@@ -3,7 +3,7 @@ import { Apple, Croissant, Carrot, Milk, Cookie, Coffee, Pizza, Fish, Beef, Cand
 import CategoryCard from '../../components/Cards/CategoryCard';
 
 
-const Categories = () => {
+const Category = () => {
   const categoriesData = [
     {
       icon: Apple,
@@ -92,4 +92,4 @@ const Categories = () => {
   )
 }
 
-export default Categories
+export default Category

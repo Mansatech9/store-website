@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../../components/Cards/ProductCard";
+import ProductViewCard from '../../components/Cards/ProductViewCard';
 
 
 const NewArrival = () => {
@@ -13,7 +14,8 @@ const NewArrival = () => {
       setIsTransitioning(false);
     }, 300); // Match this duration with the transition duration in Tailwind
   };
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const products = [
     // Fruits (10 items)
     {
@@ -504,6 +506,17 @@ const NewArrival = () => {
       isNew: true,
     },
   ];
+
+  const handleProductView = (product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
+
   const getMixedProducts = () => {
     
     const fruits = products.filter(p => p.category === 'Fruits');
@@ -609,10 +622,18 @@ const NewArrival = () => {
               onSale={product.onSale}
               isNew={product.isNew}
               weight={product.weight}
+              onViewProduct={() => handleProductView(product)}
             />
           ))}
         </div>
       </div>
+      {selectedProduct && (
+    <ProductViewCard 
+      isOpen={isModalOpen} 
+      onClose={handleCloseModal}
+      product={selectedProduct}
+    />
+  )}
     </div>
   );
 };

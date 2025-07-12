@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProductCard from '../../components/Cards/ProductCard';
+import ProductViewCard from '../../components/Cards/ProductViewCard';
 
 const DealOfTheDay = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -8,7 +9,9 @@ const DealOfTheDay = () => {
       minutes: 41,
       seconds: 16
     });
-  
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState(null);
+
     useEffect(() => {
       const timer = setInterval(() => {
         setTimeLeft(prevTime => {
@@ -52,6 +55,21 @@ const DealOfTheDay = () => {
   
       return () => clearInterval(timer);
     }, []);
+
+
+
+    const handleProductView = (product) => {
+      setSelectedProduct(product);
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+      setSelectedProduct(null);
+    };
+
+    
+
     const products = [
         {
           image: "https://maraviyainfotech.com/projects/grabit-react/assets/img/product-images/6_1.jpg",
@@ -135,10 +153,22 @@ const DealOfTheDay = () => {
                  onSale={product.onSale}
                  isNew={product.isNew}
                  weight={product.weight}
+                 onViewProduct={() => handleProductView(product)}
                />
              ))}
            </div>
          </div>
+
+
+      {/* Product View Modal */}
+     {selectedProduct && (
+    <ProductViewCard 
+      isOpen={isModalOpen} 
+      onClose={handleCloseModal}
+      product={selectedProduct}
+    />
+  )}
+
        </div>
   )
 }
