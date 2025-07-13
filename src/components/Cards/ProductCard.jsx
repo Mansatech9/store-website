@@ -74,12 +74,12 @@ const ProductCard = ({
    
 {isHovered && (
   <div className="absolute bottom-0 left-0 right-0  bg-opacity-90 bg-transparent flex items-center justify-center gap-4 p-2 transition-opacity duration-300">
-    <button className="p-2 rounded-lg bg-white border border-gray-200 cursor-pointer hover:bg-green-300 transition-colors duration-200">
+    <button className="p-2 rounded-lg bg-white border border-gray-200 cursor-pointer hover:bg-blue-300 transition-colors duration-200">
       <ShoppingCart className="w-4 h-4 text-gray-900" />
     </button>
     <button 
      onClick={handleViewProduct}
-    className="p-2 rounded-lg  bg-white border border-gray-200 cursor-pointer hover:bg-green-300 transition-colors duration-200">
+    className="p-2 rounded-lg  bg-white border border-gray-200 cursor-pointer hover:bg-blue-300 transition-colors duration-200">
       <Eye className="w-4 h-4 text-gray-900" />
     </button>
   </div>

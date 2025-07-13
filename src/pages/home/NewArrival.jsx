@@ -544,7 +544,7 @@ const NewArrival = () => {
         <div className="mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div >
             <h2 className="text-3xl font-medium text-gray-900">
-              New <span className="text-green-900">Arrivals</span>
+              New <span className="text-blue-900">Arrivals</span>
             </h2>
             <p className="text-gray-600 font mt-2">
               Shop online for new arrivals and get free shipping.
@@ -555,8 +555,8 @@ const NewArrival = () => {
               onClick={() => handleCategoryChange("All")}
               className={`px-4 py-2  cursor-pointer  transition-colors duration-200 ${
                 activeCategory === "All"
-                  ? " text-green-900"
-                  : " text-gray-800 hover:text-green-900"
+                  ? " text-blue-900"
+                  : " text-gray-800 hover:text-blue-900"
               }`}
             >
               All
@@ -565,8 +565,8 @@ const NewArrival = () => {
               onClick={() => handleCategoryChange("Snacks & Spices")}
               className={`px-4 py-2  cursor-pointer transition-colors duration-200 ${
                 activeCategory === "Snacks & Spices"
-                     ? " text-green-900"
-                  : " text-gray-800 hover:text-green-900"
+                     ? " text-blue-900"
+                  : " text-gray-800 hover:text-blue-900"
               }`}
             >
               Snacks & Spices
@@ -575,8 +575,8 @@ const NewArrival = () => {
               onClick={() => handleCategoryChange("Fruits")}
               className={`px-4 py-2  cursor-pointer  transition-colors duration-200 ${
                 activeCategory === "Fruits"
-                  ? " text-green-900"
-                  : " text-gray-800 hover:text-green-900"
+                  ? " text-blue-900"
+                  : " text-gray-800 hover:text-blue-900"
               }`}
             >
               Fruits
@@ -585,8 +585,8 @@ const NewArrival = () => {
               onClick={() => handleCategoryChange("Vegetables")}
               className={`px-4 py-2   cursor-pointer transition-colors duration-200 ${
                 activeCategory === "Vegetables"
-                    ? " text-green-900"
-                  : " text-gray-800 hover:text-green-900"
+                    ? " text-blue-900"
+                  : " text-gray-800 hover:text-blue-900"
               }`}
             >
               Vegetables
@@ -595,8 +595,8 @@ const NewArrival = () => {
               onClick={() => handleCategoryChange("Dried Fruits")}
               className={`px-4 py-2  cursor-pointer transition-colors duration-200 ${
                 activeCategory === "Dried Fruits"
-                      ? " text-green-900"
-                  : " text-gray-800 hover:text-green-900"
+                      ? " text-blue-900"
+                  : " text-gray-800 hover:text-blue-900"
               }`}
             >
               Dried Fruits
