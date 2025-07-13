@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { ChevronDown, Trash2, Plus, Minus, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Cart = () => {
-  const [summaryOpen, setSummaryOpen] = useState(false);
-  const [shippingOpen, setShippingOpen] = useState(false);
+  const [summaryOpen, setSummaryOpen] = useState(true);
+  const [shippingOpen, setShippingOpen] = useState(true);
   const [selectedCountry, setSelectedCountry] = useState('United States');
   const [selectedState, setSelectedState] = useState('Please Select a region, state');
   const [zipCode, setZipCode] = useState('');
