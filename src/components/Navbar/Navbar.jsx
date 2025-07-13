@@ -165,12 +165,17 @@ const Navbar = () => {
                 <span>Categories</span>
                
               </div>
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
+              <div
+              
+              onClick={()=>navigate('/product-details')}
+              className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
                 <span>Products</span>
               
               </div>
-              <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
-                <span>Blog</span>
+              <div 
+                 onClick={()=>navigate('/cart')}
+              className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">
+                <span>Cart</span>
                
               </div>
               <div className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 cursor-pointer">

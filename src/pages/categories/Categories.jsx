@@ -9,10 +9,11 @@ import Info from '../home/Info'
 const Categories = () => {
   return (
     <>
-     <Featured/>
+
     <CategoriesSection/>
     <CategoriesFilterProduct/>
     <Info/>
+    <Featured/>
     </>
   )
 }
