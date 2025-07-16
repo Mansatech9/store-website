@@ -11,7 +11,7 @@ const Categories = () => {
     <>
 
     <CategoriesSection/>
-    <CategoriesFilterProduct/>
+    {/* <CategoriesFilterProduct/>   when we click on categories  */}
     <Info/>
     <Featured/>
     </>

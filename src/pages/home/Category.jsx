@@ -1,69 +1,40 @@
-import React from 'react'
-import { Apple, Croissant, Carrot, Milk, Cookie, Coffee, Pizza, Fish, Beef, Candy } from 'lucide-react'
-import CategoryCard from '../../components/Cards/CategoryCard';
+import React from 'react';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 
+import CategoryCard from '../../components/Cards/CategoryCard';
+import BASE_URL from '../../config/BaseUrl';
+
+const fetchCategories = async () => {
+  const response = await axios.get(`${BASE_URL}/api/fetch-category`);
+  return response.data;
+};
 
 const Category = () => {
-  const categoriesData = [
-    {
-      icon: Apple,
-      title: "Fruits",
-      itemCount: 320,
-      percentage: 30,
-      gradientFrom: "#dcfce7", // from-green-100
-      gradientTo: "#bbf7d0",   // to-green-200
-      iconColor: "text-green-600"
-    },
-    {
-      icon: Carrot,
-      title: "Vegetables",
-      itemCount: 548,
-      percentage: 15,
-      gradientFrom: "#fee2e2", // from-red-100
-      gradientTo: "#fbcfe8",   // to-pink-200
-      iconColor: "text-red-600"
-    },
-    {
-      icon: Milk,
-      title: "Dairy & Milk",
-      itemCount: 48,
-      percentage: 10,
-      gradientFrom: "#f3e8ff", // from-purple-100
-      gradientTo: "#e9d5ff",   // to-purple-200
-      iconColor: "text-purple-600"
-    },
-    {
-      icon: Cookie,
-      title: "Snack & Spice",
-      itemCount: 59,
-      percentage: 8,
-      gradientFrom: "#fef9c3", // from-yellow-100
-      gradientTo: "#fef08a",   // to-yellow-200
-      iconColor: "text-yellow-600"
-    },
-    {
-      icon: Coffee,
-      title: "Juice & Drinks",
-      itemCount: 845,
-      percentage: 12,
-      gradientFrom: "#dbeafe", // from-blue-100
-      gradientTo: "#bfdbfe",   // to-blue-200
-      iconColor: "text-blue-600"
-    },
-    {
-      icon: Pizza,
-      title: "Fast Food",
-      itemCount: 156,
-      percentage: 18,
-      gradientFrom: "#ffedd5", // from-orange-100
-      gradientTo: "#fed7aa",   // to-orange-200
-      iconColor: "text-orange-600"
-    },
-   
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['categories'],
+    queryFn: fetchCategories
+  });
+
+ 
+  const gradientColors = [
+    { gradientFrom: "#dcfce7", gradientTo: "#bbf7d0" }, // green
+    { gradientFrom: "#fee2e2", gradientTo: "#fbcfe8" }, // red/pink
+    { gradientFrom: "#f3e8ff", gradientTo: "#e9d5ff" }, // purple
+    { gradientFrom: "#fef9c3", gradientTo: "#fef08a" }, // yellow
+    { gradientFrom: "#dbeafe", gradientTo: "#bfdbfe" }, // blue
+    { gradientFrom: "#ffedd5", gradientTo: "#fed7aa" }, // orange
+    { gradientFrom: "#ccfbf1", gradientTo: "#99f6e4" }, // teal
+    { gradientFrom: "#fce7f3", gradientTo: "#fbcfe8" }, // pink
+    { gradientFrom: "#e0e7ff", gradientTo: "#c7d2fe" }, // indigo
+    { gradientFrom: "#ecfccb", gradientTo: "#d9f99d" }, // lime
   ];
 
+  if (isLoading) return <div className="text-center py-8">Loading categories...</div>;
+  if (error) return <div className="text-center py-8 text-red-500">Error loading categories</div>;
+
   return (
-    <div className="w-full py-8 ">
+    <div className="w-full py-8">
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="text-3xl font-medium text-gray-900">Shop by Categories</h2>
@@ -71,25 +42,25 @@ const Category = () => {
         </div>
         
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-          {categoriesData.map((category, index) => (
-            <CategoryCard
-              key={index}
-              icon={category.icon}
-              title={category.title}
-              itemCount={category.itemCount}
-              percentage={category.percentage}
-              gradientFrom={category.gradientFrom}
-              gradientTo={category.gradientTo}
-              iconColor={category.iconColor}
-            />
-          ))}
+          {data?.data?.map((category, index) => {
+     
+            const colorIndex = index % gradientColors.length;
+            return (
+              <CategoryCard
+                key={category.id}
+                id={category.id}
+                image={`${data.image_url.find(img => img.image_for === "Category").image_url}${category.category_image}`}
+                title={category.category_name}
+                itemCount={category.product_count}
+                gradientFrom={gradientColors[colorIndex].gradientFrom}
+                gradientTo={gradientColors[colorIndex].gradientTo}
+              />
+            );
+          })}
         </div>
-
-    
-        
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Category
+export default Category;

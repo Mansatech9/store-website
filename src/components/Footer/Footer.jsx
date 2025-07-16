@@ -36,10 +36,14 @@ const Footer = () => {
           <div className="w-full lg:w-[25%] ">
           
             <div className="flex items-center mb-4">
-              <div className="bg-blue-500 w-8 h-8 rounded-full flex items-center justify-center mr-2">
-                <span className="text-white font-bold text-sm">G</span>
-              </div>
-              <span className="text-2xl font-bold text-gray-900">Lohiya's</span>
+            <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => navigate('/')}>
+  <img
+    src="/logo-bg.png"
+    alt="Lohiya's Logo"
+    className="h-10 w-auto"
+  />
+</div>
+
             </div>
 
            
